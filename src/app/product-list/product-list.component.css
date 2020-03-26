@@ -1,5 +1,16 @@
 
+.stilo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  box-sizing: border-box;
+  height: 100px;
+}
 
+.contenedor{
+  height: 400px;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

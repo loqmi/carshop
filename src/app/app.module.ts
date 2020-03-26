@@ -6,11 +6,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    ScrollingModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ])

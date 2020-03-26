@@ -1,6 +1,6 @@
 <h2>Products</h2>
-
-<div *ngFor="let product of products">
+<cdk-virtual-scroll-viewport itemSize="10" class="contenedor">
+<div *cdkVirtualFor="let product of products" class="stilo">
 
   <h3>
     <a [title]="product.name + ' details'">
@@ -12,11 +12,9 @@
     Description: {{ product.description }}
   </p>
 
-  <button (click)="share()">
-    Share
-  </button>
-
+  
 </div>
+</cdk-virtual-scroll-viewport>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
